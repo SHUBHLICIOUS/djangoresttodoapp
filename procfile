@@ -1,0 +1,4 @@
+web: gunicorn myproject.wsgi
+release: python3 manage.py makemigrations --noninput
+release: python3 manage.py collectstatic --noninput
+release: python3 manage.py migrate --noninput
