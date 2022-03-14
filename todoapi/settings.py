@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import django_on_heroku
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -140,6 +140,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASSES':'rest_framework.pagination.PageNumberPagination','page_size':10
 }
 
-django_on_heroku.settings(locals())
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
